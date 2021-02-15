@@ -22,6 +22,7 @@ def main():
     users_latitude = float(input())
     print("Please enter your longitude:")
     users_longitude = float(input())
+    print("Wait a minute...")
     users_coordinates = users_latitude, users_longitude
     file_path = os.path.realpath('locations.list')
     dictionary = data.create_dictionary_with_locations(file_path)
