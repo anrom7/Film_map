@@ -5,6 +5,7 @@ import data
 import geo
 import create_map
 import os.path
+import webbrowser
 
 
 def main():
@@ -30,6 +31,9 @@ def main():
     list_with_distance = data.add_distance(films_of_year, users_coordinates)
     csv_file_path = data.create_csv(list_with_distance)
     html = create_map.show_locations(csv_file_path, users_coordinates)
+    path = os.path.abspath(html)
+    url = 'file://' + path
+    webbrowser.open(url)
     return html
 
 if __name__ == "__main__":
