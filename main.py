@@ -15,6 +15,7 @@ def main():
     Please enter the year:
     Please enter your latitude:
     Please enter your longitude:
+    Wait a minute...
     'map1.html'
     """
     print("Please enter the year:")
