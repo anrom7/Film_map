@@ -1,11 +1,12 @@
 """
 This module includes function which creates html map.
 """
+import os.path
+import webbrowser
 import data
 import geo
 import create_map
-import os.path
-import webbrowser
+
 
 
 def main():
